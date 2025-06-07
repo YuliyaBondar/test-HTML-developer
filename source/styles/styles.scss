@@ -33,6 +33,11 @@ body {
   line-height: 1.5;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
@@ -76,7 +81,7 @@ body {
   position: fixed;
 
   width: 100%;
-  padding: 32px;
+  padding: 32px 0;
 
   background-color: rgba(16, 16, 29, 0.9);
 
@@ -114,7 +119,10 @@ body {
     line-height: 100%;
     text-transform: uppercase;
 
-    &.current {
+    transition: all 0.3s ease-in-out;
+
+    &.current,
+    &:hover {
       color: #43ABF0;
     }
   }
