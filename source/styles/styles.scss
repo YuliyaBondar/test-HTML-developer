@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 100%;
 }
 
 a {
@@ -105,7 +105,6 @@ body {
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 28px;
-  line-height: 100%;
   text-transform: uppercase;
 
   &__domain {
@@ -115,11 +114,10 @@ body {
 
 .navigation__ul {
   display: flex;
-  column-gap: 3.8rem;
+  column-gap: 4rem;
 
   &-item {
     font-weight: 600;
-    line-height: 100%;
     text-transform: uppercase;
 
     transition: all 0.3s ease-in-out;
@@ -131,7 +129,7 @@ body {
   }
 }
 
-.section__banner {
+.section-banner {
   display: flex;
   align-items: center;
   min-height: 850px;
@@ -139,22 +137,25 @@ body {
   color: #000000;
 
   background-size: cover;
+  background-position: center;
   background-image: url('/source/images/banner.jpg');
   background-repeat: no-repeat;
 
-  &-container {
+  &__container {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 80px;
   }
 
-  &-text {
+  &__text {
     font-size: 20px;
     line-height: 100%;
   }
 
-  &-ul {
-    li {
+  &__ul {
+    margin: 0;
+
+    &-item {
       display: flex;
       gap: 10px;
       margin-bottom: 5px;
@@ -166,15 +167,15 @@ body {
     }
   }
 
-  &-buttons {
+  &__buttons {
     display: flex;
     gap: 2rem;
   }
 }
 
 .h1 {
-  font-size: 48px;
   line-height: 100%;
+  font-size: 48px;
   text-transform: uppercase;
 
   &_blue {
@@ -182,7 +183,7 @@ body {
   }
 }
 
-.f-700 {
+.f-w700 {
   font-weight: 700;
 }
 
@@ -190,8 +191,6 @@ body {
   min-width: 183px;
   padding: 15px;
 
-  font-family: 'Lato';
-  line-height: 100%;
   text-transform: uppercase;
 
   border-radius: 4px;
@@ -214,4 +213,80 @@ body {
 .button_white {
   background-color: variables.$white-color;
   border: 1px solid #6F6D7B;
+}
+
+.section-order {
+  padding: 120px 0 150px;
+
+  background-size: cover;
+  background-position: center;
+  background-image: url('/source/images/world.jpg');
+  background-repeat: no-repeat;
+
+  &__text {
+    margin-bottom: 80px;
+
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: #BBBBBB;
+  }
+}
+
+.h2 {
+  margin-bottom: 30px;
+
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+
+  &_blue {
+    color: #3E9CDC;
+  }
+}
+
+.order-steps {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 20%;
+
+    z-index: 1;
+
+    &-text {
+      font-size: 16px;
+      line-height: 100%;
+      text-align: center;
+    }
+
+    &-circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      
+      border: 5px solid #286690;
+      border-radius: 50%;
+      background-color: #3E9CDC;
+    }
+  }
+
+  &::after {
+    content: url('/source/images/points.png');
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

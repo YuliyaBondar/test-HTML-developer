@@ -29,7 +29,7 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 100%;
 }
 
 a {
@@ -98,7 +98,6 @@ body {
   font-family: "Raleway";
   font-weight: 800;
   font-size: 28px;
-  line-height: 100%;
   text-transform: uppercase;
 }
 .site-name__domain {
@@ -107,11 +106,10 @@ body {
 
 .navigation__ul {
   display: flex;
-  column-gap: 3.8rem;
+  column-gap: 4rem;
 }
 .navigation__ul-item {
   font-weight: 600;
-  line-height: 100%;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
@@ -119,56 +117,58 @@ body {
   color: #43ABF0;
 }
 
-.section__banner {
+.section-banner {
   display: flex;
   align-items: center;
   min-height: 850px;
   color: #000000;
   background-size: cover;
+  background-position: center;
   background-image: url("/source/images/banner.jpg");
   background-repeat: no-repeat;
 }
-.section__banner-container {
+.section-banner__container {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 80px;
 }
-.section__banner-text {
+.section-banner__text {
   font-size: 20px;
   line-height: 100%;
 }
-.section__banner-ul li {
+.section-banner__ul {
+  margin: 0;
+}
+.section-banner__ul-item {
   display: flex;
   gap: 10px;
   margin-bottom: 5px;
   padding-left: 10px;
 }
-.section__banner-ul li::before {
+.section-banner__ul-item::before {
   content: "-";
 }
-.section__banner-buttons {
+.section-banner__buttons {
   display: flex;
   gap: 2rem;
 }
 
 .h1 {
-  font-size: 48px;
   line-height: 100%;
+  font-size: 48px;
   text-transform: uppercase;
 }
 .h1_blue {
   color: #3E9CDC;
 }
 
-.f-700 {
+.f-w700 {
   font-weight: 700;
 }
 
 .button {
   min-width: 183px;
   padding: 15px;
-  font-family: "Lato";
-  line-height: 100%;
   text-transform: uppercase;
   border-radius: 4px;
   cursor: pointer;
@@ -187,6 +187,70 @@ body {
 .button_white {
   background-color: #FFFFFF;
   border: 1px solid #6F6D7B;
+}
+
+.section-order {
+  padding: 120px 0 150px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/source/images/world.jpg");
+  background-repeat: no-repeat;
+}
+.section-order__text {
+  margin-bottom: 80px;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: #BBBBBB;
+}
+
+.h2 {
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+.h2_blue {
+  color: #3E9CDC;
+}
+
+.order-steps {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.order-steps__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 20%;
+  z-index: 1;
+}
+.order-steps__item-text {
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+}
+.order-steps__item-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 5px solid #286690;
+  border-radius: 50%;
+  background-color: #3E9CDC;
+}
+.order-steps::after {
+  content: url("/source/images/points.png");
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=styles.css.map */
