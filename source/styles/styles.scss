@@ -1,3 +1,5 @@
+@use 'variables';
+
 *,
 *::before,
 *::after {
@@ -74,7 +76,7 @@ p {
 body {
   font-family: 'Lato', 'Roboto', sans-serif;
   font-size: 13px;
-  color: #FFFFFF;
+  color: variables.$white-color;
 }
 
 .header {
@@ -93,13 +95,14 @@ body {
 }
 
 .container {
+  width: 100%;
+  max-width: 1230px;
   padding: 0 30px;
   margin: 0 auto;
-  max-width: 1110px;
 }
 
 .site-name {
-  font-family: Raleway;
+  font-family: 'Raleway';
   font-weight: 800;
   font-size: 28px;
   line-height: 100%;
@@ -112,7 +115,7 @@ body {
 
 .navigation__ul {
   display: flex;
-  column-gap: 60px;
+  column-gap: 3.8rem;
 
   &-item {
     font-weight: 600;
@@ -129,9 +132,86 @@ body {
 }
 
 .section__banner {
+  display: flex;
+  align-items: center;
   min-height: 850px;
+
+  color: #000000;
 
   background-size: cover;
   background-image: url('/source/images/banner.jpg');
   background-repeat: no-repeat;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  &-text {
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  &-ul {
+    li {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 5px;
+      padding-left: 10px;
+
+      &::before {
+        content: '-';
+      }
+    }
+  }
+
+  &-buttons {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+.h1 {
+  font-size: 48px;
+  line-height: 100%;
+  text-transform: uppercase;
+
+  &_blue {
+    color: #3E9CDC;
+  }
+}
+
+.f-700 {
+  font-weight: 700;
+}
+
+.button {
+  min-width: 183px;
+  padding: 15px;
+
+  font-family: 'Lato';
+  line-height: 100%;
+  text-transform: uppercase;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.button_blue {
+  color: variables.$white-color;
+
+  background-color: #3E9CDC;
+  border: 1px solid variables.$white-color;
+}
+
+.button_white {
+  background-color: variables.$white-color;
+  border: 1px solid #6F6D7B;
 }

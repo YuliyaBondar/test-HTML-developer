@@ -88,13 +88,14 @@ body {
 }
 
 .container {
+  width: 100%;
+  max-width: 1230px;
   padding: 0 30px;
   margin: 0 auto;
-  max-width: 1110px;
 }
 
 .site-name {
-  font-family: Raleway;
+  font-family: "Raleway";
   font-weight: 800;
   font-size: 28px;
   line-height: 100%;
@@ -106,7 +107,7 @@ body {
 
 .navigation__ul {
   display: flex;
-  column-gap: 60px;
+  column-gap: 3.8rem;
 }
 .navigation__ul-item {
   font-weight: 600;
@@ -119,10 +120,73 @@ body {
 }
 
 .section__banner {
+  display: flex;
+  align-items: center;
   min-height: 850px;
+  color: #000000;
   background-size: cover;
   background-image: url("/source/images/banner.jpg");
   background-repeat: no-repeat;
+}
+.section__banner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.section__banner-text {
+  font-size: 20px;
+  line-height: 100%;
+}
+.section__banner-ul li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+.section__banner-ul li::before {
+  content: "-";
+}
+.section__banner-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.h1 {
+  font-size: 48px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.h1_blue {
+  color: #3E9CDC;
+}
+
+.f-700 {
+  font-weight: 700;
+}
+
+.button {
+  min-width: 183px;
+  padding: 15px;
+  font-family: "Lato";
+  line-height: 100%;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+
+.button_blue {
+  color: #FFFFFF;
+  background-color: #3E9CDC;
+  border: 1px solid #FFFFFF;
+}
+
+.button_white {
+  background-color: #FFFFFF;
+  border: 1px solid #6F6D7B;
 }
 
 /*# sourceMappingURL=styles.css.map */
