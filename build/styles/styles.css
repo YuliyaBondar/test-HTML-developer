@@ -385,4 +385,63 @@ body {
   transform: scale(1.1);
 }
 
+.footer {
+  padding: 30px 0;
+  background-color: #3D4050;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__item {
+  display: flex;
+  width: 30%;
+  line-height: 18px;
+  text-align: center;
+}
+.footer__item:first-child {
+  border-right: 1px solid #C3C3C3;
+}
+.footer__item:last-child {
+  border-left: 1px solid #C3C3C3;
+}
+.footer__item-pay {
+  width: auto;
+  justify-content: center;
+  gap: 40px;
+}
+.footer__item-pay, .footer__item-contacts {
+  justify-content: flex-end;
+  gap: 56px;
+}
+.footer__item-pay div, .footer__item-contacts div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer__item-pay div.qiwi, .footer__item-contacts div.qiwi {
+  color: #C3C3C3;
+}
+.footer__item-pay div.qiwi::before, .footer__item-contacts div.qiwi::before {
+  content: url("/source/images/qiwi.png");
+}
+.footer__item-pay div.yandex, .footer__item-contacts div.yandex {
+  color: #C3C3C3;
+}
+.footer__item-pay div.yandex::before, .footer__item-contacts div.yandex::before {
+  content: url("/source/images/yandex.png");
+}
+.footer__item-pay div.web-money, .footer__item-contacts div.web-money {
+  color: #C3C3C3;
+}
+.footer__item-pay div.web-money::before, .footer__item-contacts div.web-money::before {
+  content: url("/source/images/web_money.png");
+}
+.footer__item-pay div.email::before, .footer__item-contacts div.email::before {
+  content: url("/source/images/email_blue.png");
+}
+.footer__item-pay div.vk::before, .footer__item-contacts div.vk::before {
+  content: url("/source/images/vk.png");
+}
+
 /*# sourceMappingURL=styles.css.map */
