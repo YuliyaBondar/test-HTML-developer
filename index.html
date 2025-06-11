@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorem ipsum dolor sit amet consectetur adipiscing</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipiscing">
+  <link rel="stylesheet" href="./build/styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preload" fetchpriority="high" as="image" href="./source/images/banner.jpg" type="image/jpeg">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="site-name">LoremIpsum.<span class="site-name__domain">Net</span></div>
+      <nav class="navigation">
+        <ul class="navigation__ul">
+          <li class="navigation__ul-item current"><a href="#">Бизнес</a></li>
+          <li class="navigation__ul-item"><a href="#">О нас</a></li>
+          <li class="navigation__ul-item"><a href="#">Цены</a></li>
+          <li class="navigation__ul-item"><a href="#order">Оформить заказ</a></li>
+        </ul>
+      </nav>
+      <div class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section-banner">
+      <div class="container section-banner__container">
+        <h1 class="h1"><span class="h1_blue">Lorem ipsum</span> dolor sit<br>amet consectetur <span class="h1_blue">adipiscing</span></h1>
+        <div class="section-banner__text">
+          <p class="section-banner__text-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+          <ul class="section-banner__ul">
+            <li class="section-banner__ul-item">Totam rem aperiam eaque ipsa</li>
+            <li class="section-banner__ul-item">Sit voluptatem accusantium doloremque laudantium</li>
+            <li class="section-banner__ul-item">Sed ut perspiciatis, unde omnis iste natus error</li>
+          </ul>
+        </div>
+        <div class="section-banner__buttons">
+          <button class="button button_blue">Заказать</button>
+          <button class="button button_white">Подробнее</button>
+        </div>
+      </div>
+    </section>
+    <section class="section-order" id="order">
+      <div class="container">
+        <h2 class="h2">Оформление <span class="h2_blue">заказа</span></h2>
+        <p class="section-order__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+        <div class="order-steps">
+          <div class="order-steps__item">
+            <div class="order-steps__item-circle">
+              <img src="./source/images/loupe.png" alt="loupe" width="34" height="35">
+            </div>
+            <p class="order-steps__item-text">Lorem ipsum dolor sit<br>amet</p>
+          </div>
+          <div class="order-steps__item">
+            <div class="order-steps__item-circle">
+              <img src="./source/images/percent.png" alt="percent" width="32" height="31">
+            </div>
+            <p class="order-steps__item-text">Сonsecteturadipiscing elit</p>
+          </div>
+          <div class="order-steps__item">
+            <div class="order-steps__item-circle">
+              <img src="./source/images/doc.png" alt="doc" width="39" height="42">
+            </div>
+            <p class="order-steps__item-text">Sed do eiusmod tempor</p>
+          </div>
+          <div class="order-steps__item">
+            <div class="order-steps__item-circle">
+              <img src="./source/images/email.png" alt="email" width="37" height="30">
+            </div>
+            <p class="order-steps__item-text">Esse cillum dolore eu<br>fugiat</p>
+          </div>
+          <div class="order-steps__item">
+            <div class="order-steps__item-circle">
+              <img src="./source/images/dollar.png" alt="dollar" width="39" height="27">
+            </div>
+            <p class="order-steps__item-text">Excepteur sint occaecat cupidatat non proident</p>
+          </div>
+        </div>
+        <form action="" method="post" class="form">
+          <div class="form__container">
+            <select name="payment_type" id="payment_type" class="form__item form__item-select">
+              <option value="">Выберите тип системы</option>
+              <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+              <option value="Nemo enim ipsam">Nemo enim ipsam</option>
+              <option value="Et harum quidem">Et harum quidem</option>
+              <option value="Temporibus autem">Temporibus autem</option>
+              <option value="Itaque earum rerum">Itaque earum rerum</option>
+            </select>
+            <input type="text" name="email" id="email" placeholder="Ваш e-mail" class="form__item form__item-input">
+            <input type="text" name="name" id="name" placeholder="Ваше имя" class="form__item form__item-input">
+            <label for="range" class="form-range__container">
+              <div class="form-range__text">
+                <p>Sed ut perspiciatis, unde omnis iste natus</p>
+                <p><output class="form-range__value"></output> %</p>
+              </div>
+              <input type="range" name="range" id="range" value="75" min="0" max="100" step="1" class="form-range__input">
+            </label>
+            <label for="file" class="form__item">
+              <input type="file" name="file" id="file" class="file-input">
+              <span class="file-span">Прикрепить файл</span>
+            </label>
+          </div>
+          <button type="submit" class="form__item button button_blue">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__item">© 2018 «LoremIpsum.net» Все права защищены.</div>
+      <div class="footer__item footer__item-pay">
+        <div class="qiwi">Qiwi wallet</div>
+        <div class="yandex">Yandex Money</div>
+        <div class="web-money">Web Money</div>
+      </div>
+      <div class="footer__item footer__item-contacts">
+        <div class="email"><a href="mailto:info@ipsum228.com">info@ipsum228.com</a></div>
+        <div class="vk"><a href="#">Мы вконтакте</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="burger-overlay"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
