@@ -1,3 +1,4 @@
+//Range slider
 const rangeElement = document.querySelector('.form-range__input');
 const formRangeValue = document.querySelector('.form-range__value');
 
@@ -6,3 +7,33 @@ formRangeValue.textContent = rangeElement.value;
 rangeElement.addEventListener('input', e => {
   formRangeValue.textContent = e.target.value;
 });
+
+
+//Burger menu
+const burger = document.querySelector('.burger');
+const navigation = document.querySelector('.navigation');
+const overlay = document.querySelector('.burger-overlay');
+const navigationUlItems = document.querySelectorAll('.navigation__ul-item');
+
+burger.addEventListener('click', adaptiveMenu);
+overlay.addEventListener('click', adaptiveMenu);
+
+navigationUlItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    adaptiveMenu();
+    
+    navigationUlItems.forEach((element) => {
+      if (element != this) {
+        element.classList.remove('current');
+      } else {
+        element.classList.add('current');
+      }
+    });
+  });
+});
+
+function adaptiveMenu() {
+  burger.classList.toggle('active');
+  navigation.classList.toggle('adaptive');
+  overlay.classList.toggle('active');
+}
