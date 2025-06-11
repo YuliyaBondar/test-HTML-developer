@@ -27,14 +27,14 @@ navigationUlItems.forEach((item) => {
     });
     item.classList.add('current');
 
-    adaptiveMenu();
+    if (window.innerWidth <= 768) {
+      adaptiveMenu();
+    }
   });
 });
 
 function adaptiveMenu() {
   burger.classList.toggle('active');
   navigation.classList.toggle('adaptive');
-  if (window.innerWidth <= 768) {
-    overlay.classList.toggle('active');
-  }
+  overlay.classList.toggle('active');
 }
