@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lorem ipsum dolor sit amet consectetur adipiscing</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipiscing">
   <link rel="stylesheet" href="./build/styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preload" fetchpriority="high" as="image" href="./source/images/banner.jpg" type="image/jpeg">
 </head>
 <body>
   <header class="header">
@@ -53,31 +55,31 @@
         <div class="order-steps">
           <div class="order-steps__item">
             <div class="order-steps__item-circle">
-              <img src="./source/images/loupe.png" alt="loupe">
+              <img src="./source/images/loupe.png" alt="loupe" width="34" height="35">
             </div>
             <p class="order-steps__item-text">Lorem ipsum dolor sit<br>amet</p>
           </div>
           <div class="order-steps__item">
             <div class="order-steps__item-circle">
-              <img src="./source/images/percent.png" alt="percent">
+              <img src="./source/images/percent.png" alt="percent" width="32" height="31">
             </div>
             <p class="order-steps__item-text">Сonsecteturadipiscing elit</p>
           </div>
           <div class="order-steps__item">
             <div class="order-steps__item-circle">
-              <img src="./source/images/doc.png" alt="doc">
+              <img src="./source/images/doc.png" alt="doc" width="39" height="42">
             </div>
             <p class="order-steps__item-text">Sed do eiusmod tempor</p>
           </div>
           <div class="order-steps__item">
             <div class="order-steps__item-circle">
-              <img src="./source/images/email.png" alt="email">
+              <img src="./source/images/email.png" alt="email" width="37" height="30">
             </div>
             <p class="order-steps__item-text">Esse cillum dolore eu<br>fugiat</p>
           </div>
           <div class="order-steps__item">
             <div class="order-steps__item-circle">
-              <img src="./source/images/dollar.png" alt="dollar">
+              <img src="./source/images/dollar.png" alt="dollar" width="39" height="27">
             </div>
             <p class="order-steps__item-text">Excepteur sint occaecat cupidatat non proident</p>
           </div>
@@ -94,13 +96,13 @@
             </select>
             <input type="text" name="email" id="email" placeholder="Ваш e-mail" class="form__item form__item-input">
             <input type="text" name="name" id="name" placeholder="Ваше имя" class="form__item form__item-input">
-            <div class="form-range__container">
+            <label for="range" class="form-range__container">
               <div class="form-range__text">
                 <p>Sed ut perspiciatis, unde omnis iste natus</p>
                 <p><output class="form-range__value"></output> %</p>
               </div>
               <input type="range" name="range" id="range" value="75" min="0" max="100" step="1" class="form-range__input">
-            </div>
+            </label>
             <label for="file" class="form__item">
               <input type="file" name="file" id="file" class="file-input">
               <span class="file-span">Прикрепить файл</span>
