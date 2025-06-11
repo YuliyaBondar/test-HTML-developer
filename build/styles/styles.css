@@ -193,7 +193,7 @@ body {
   color: #000000;
   background-size: cover;
   background-position: center;
-  background-image: url("/source/images/banner.jpg");
+  background-image: url("../../source/images/banner.jpg");
   background-repeat: no-repeat;
 }
 .section-banner__container {
@@ -289,7 +289,7 @@ body {
   padding: 120px 0 150px;
   background-size: cover;
   background-position: center;
-  background-image: url("/source/images/world.jpg");
+  background-image: url("../../source/images/world.jpg");
   background-repeat: no-repeat;
 }
 .section-order__text {
@@ -360,7 +360,7 @@ body {
   background-color: #3E9CDC;
 }
 .order-steps::after {
-  content: url("/source/images/points.png");
+  content: url("../../source/images/points.png");
   position: absolute;
   top: 30%;
   left: 50%;
@@ -405,7 +405,7 @@ body {
   border-radius: 3px;
   background-position: top 50% right 10px;
   background-color: rgba(255, 255, 255, 0.85);
-  background-image: url("/source/images/arrow.png");
+  background-image: url("../../source/images/arrow.png");
   background-repeat: no-repeat;
   appearance: none;
   transition: all 0.3s ease-in-out;
@@ -414,7 +414,7 @@ body {
   color: #FFFFFF;
   border: 0;
   background-color: rgba(61, 64, 80, 0.85);
-  background-image: url("/source/images/arrow_up.png");
+  background-image: url("../../source/images/arrow_up.png");
 }
 .form__item-select:focus-visible {
   outline: none;
@@ -505,7 +505,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 .form .file-span::before {
-  content: url("/source/images/file.png");
+  content: url("../../source/images/file.png");
 }
 .form .file-span:hover {
   transform: scale(1.1);
@@ -572,25 +572,25 @@ body {
   color: #C3C3C3;
 }
 .footer__item-pay div.qiwi::before, .footer__item-contacts div.qiwi::before {
-  content: url("/source/images/qiwi.png");
+  content: url("../../source/images/qiwi.png");
 }
 .footer__item-pay div.yandex, .footer__item-contacts div.yandex {
   color: #C3C3C3;
 }
 .footer__item-pay div.yandex::before, .footer__item-contacts div.yandex::before {
-  content: url("/source/images/yandex.png");
+  content: url("../../source/images/yandex.png");
 }
 .footer__item-pay div.web-money, .footer__item-contacts div.web-money {
   color: #C3C3C3;
 }
 .footer__item-pay div.web-money::before, .footer__item-contacts div.web-money::before {
-  content: url("/source/images/web_money.png");
+  content: url("../../source/images/web_money.png");
 }
 .footer__item-pay div.email::before, .footer__item-contacts div.email::before {
-  content: url("/source/images/email_blue.png");
+  content: url("../../source/images/email_blue.png");
 }
 .footer__item-pay div.vk::before, .footer__item-contacts div.vk::before {
-  content: url("/source/images/vk.png");
+  content: url("../../source/images/vk.png");
 }
 @media (max-width: 1180px) {
   .footer__container {
