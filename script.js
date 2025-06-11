@@ -20,20 +20,21 @@ overlay.addEventListener('click', adaptiveMenu);
 
 navigationUlItems.forEach((item) => {
   item.addEventListener('click', () => {
-    adaptiveMenu();
-    
     navigationUlItems.forEach((element) => {
-      if (element != this) {
+      if (element !== this) {
         element.classList.remove('current');
-      } else {
-        element.classList.add('current');
       }
     });
+    item.classList.add('current');
+
+    adaptiveMenu();
   });
 });
 
 function adaptiveMenu() {
   burger.classList.toggle('active');
   navigation.classList.toggle('adaptive');
-  overlay.classList.toggle('active');
+  if (window.innerWidth <= 768) {
+    overlay.classList.toggle('active');
+  }
 }
